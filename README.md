@@ -1,29 +1,11 @@
 # Instagram_BigData_ELT_With_AWS
 
-Ingestion
-- Big Data Source: Instagram Graph API
-- Ingestion Tool: Apache Kafka
-  
-Data Streaming
-- Data Stream: AWS Kinesis Firehose
-- S3 Bucket: Preliminary Repository/Data Lake
-
-Data Processing
-- Processing Service: AWS Glue
-- Data Integration Engine: Apache Spark
-
-Data Loading
-- Database Hosting: EC2
-- NoSQL Database: MongoDB
-
-Data Vizualization
-- Dashboard Service: Tableau Cloud
-
 1. Ingestion
 Big Data Source: Instagram Graph API
 
 Role: Acts as the primary data source where you pull data from Instagram.
 Details: Instagram Graph API provides access to various types of data such as user posts, stories, comments, etc. You'll need to handle API rate limits and data fetching logic.
+
 Ingestion Tool: Apache Kafka
 
 Role: Captures and streams the data from the Instagram API.
@@ -34,6 +16,7 @@ Data Stream: AWS Kinesis Firehose
 
 Role: Facilitates the continuous streaming of data from Kafka to S3.
 Details: Kinesis Firehose is used to load data streams into data lakes (S3 in this case) with minimal setup and configuration. It handles data transformation and delivery.
+
 S3 Bucket: Preliminary Repository/Data Lake
 
 Role: Acts as a storage solution for raw data.
