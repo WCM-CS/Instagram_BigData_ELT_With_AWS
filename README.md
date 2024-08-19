@@ -3,6 +3,7 @@
 Ingestion
 - Big Data Source: Instagram Graph API
 - Ingestion Tool: Apache Kafka
+  
 Data Streaming
 - Data Stream: AWS Kinesis Firehose
 - S3 Bucket: Intermediate repository/data lake
